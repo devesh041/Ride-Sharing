@@ -64,6 +64,7 @@ const rideSchema = new mongoose.Schema({
 }, { timestamps: true });
 
 rideSchema.index({ sourceLocation: '2dsphere' });
+
 rideSchema.index({ destinationLocation: '2dsphere' });
 rideSchema.index({ route: '2dsphere' });
 
